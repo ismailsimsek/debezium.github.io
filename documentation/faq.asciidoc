@@ -74,7 +74,7 @@ Applications connect to Kafka directly and consume the events within the appropr
 
 == How many databases can be monitored?
 
-Debezium can monitor any number of databases. The number of connectors that can be deployed to a single cluster of Kafka Connect services depends upon upon the volume and rate of events. However, Debezium supports multiple Kafka Connect service clusters and, if needed, multiple Kafka clusters as well.
+Debezium can monitor any number of databases. The number of connectors that can be deployed to a single cluster of Kafka Connect services depends upon the volume and rate of events. However, Debezium supports multiple Kafka Connect service clusters and, if needed, multiple Kafka clusters as well.
 
 == How does Debezium affect source databases?
 
