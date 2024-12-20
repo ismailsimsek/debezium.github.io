@@ -77,14 +77,14 @@ compatibility:
   oracle:
     database:
       versions:
-        - 12c
         - 19c
         - 21c
+        - 23ai (LogMiner only)
     driver:
       versions:
-        - 12.2.x
         - 19.x
         - 21.x
+        - 23.x (with 23ai only)
     olr:
       versions:
         - 1.3.0
