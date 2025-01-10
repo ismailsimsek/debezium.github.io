@@ -22,7 +22,7 @@ Debezium was reprocessing Kafka-based signals on connector restarts, which could
 As a result, this feature has been removed, and if a connector stops, then the signal must be re-sent (https://issues.redhat.com/browse/DBZ-7856[DBZ-7856]).
 
 Change Event Source Info Block::
-The snapshot enumeration in the `source` information block in Debezium's change events was extended to include all possible cases (https://issues.redhat.om/browse/DBZ-8496[DBZ-8496]).
+The snapshot enumeration in the `source` information block in Debezium's change events was extended to include all possible cases (https://issues.redhat.com/browse/DBZ-8496[DBZ-8496]).
 
 [id="new-features-and-improvements"]
 == New features and improvements
