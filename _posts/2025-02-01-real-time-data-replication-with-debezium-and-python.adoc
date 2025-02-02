@@ -49,7 +49,7 @@ Let's break down the key parts:
 
 Let's begin with setting up the necessary environment, including defining file paths, cleaning up previous runs, and defining a helper class `DbPostgresql` that uses Testcontainers to manage the PostgreSQL database, which acts as our operational data source.
 
-[%nowrap,python]
+[source,python,options="nowrap"]
 ----
 import os
 from pathlib import Path
@@ -113,7 +113,7 @@ We configure Debezium by creating a Java `Properties` object. This object holds 
 It includes database connection details, the connector class (PostgresConnector), offset storage, and transformations.
 The `transforms` property is used to unwrap the Debezium message, simplifying downstream processing.
 
-[%nowrap,python]
+[source,python,options="nowrap"]
 ----
 def debezium_engine_props(sourcedb: DbPostgresql):
     props = Properties()
@@ -158,7 +158,7 @@ You can find the https://github.com/memiiso/pydbzengine/blob/main/pydbzengine/de
 Similarly, a custom consuming logic could be implemented, just by implementing the `handleJsonBatch` method.
 This allows you to implement custom processing logic and consuming data to various destinations or services.
 
-[%nowrap,python]
+[source,python,options="nowrap"]
 ----
 from pydbzengine import BasePythonChangeHandler, ChangeEvent
 
@@ -175,7 +175,7 @@ class MyXYZChangeHandler(BasePythonChangeHandler):
 The `main` function orchestrates the entire process.
 It starts the PostgreSQL container, creates the Debezium engine with the configured properties and the `DltChangeHandler`, and starts the engine.
 
-[%nowrap,python]
+[source,python,options="nowrap"]
 ----
 def main():
     # Start the PostgreSQL container that will serve as the replication source.
@@ -208,7 +208,7 @@ if __name__ == "__main__":
 
 After the Debezium engine has run for a specified time (60 seconds in the example), we can connect to destination(DuckDB) database and display the loaded data.
 
-[%nowrap,python]
+[source,python,options="nowrap"]
 ----
     con = duckdb.connect(DUCKDB_FILE.as_posix())
     result = con.sql("SHOW ALL TABLES").fetchall()
@@ -220,7 +220,7 @@ After the Debezium engine has run for a specified time (60 seconds in the exampl
 ----
 
 Consumed data:
-[%nowrap,shell]
+[source,shell,options="nowrap"]
 ----
 ┌────────────────────┬────────────────────────┬────────┬───────────────────────────────┬──────────────────────────────────────────────┐
 │      load_id       │      schema_name       │ status │          inserted_at          │             schema_version_hash              │
@@ -316,7 +316,7 @@ You can see complete example and start experimenting using https://github.com/me
 To run this example, you'll need to have Docker Desktop installed and the required Python libraries.
 You can install the dependencies using:
 
-[%nowrap,shell]
+[source,shell]
 ----
 pip install pydbzengine[dev]
 python dlt_consuming.py
