@@ -42,7 +42,7 @@ We use it to manage the PostgreSQL database during the example.
 
 === Code Breakdown
 
-The provided code demonstrates a complete CDC pipeline in pyton, from capturing changes with Debezium to loading them into DuckDB with DLT.
+The provided code demonstrates a complete CDC pipeline in python, from capturing changes with Debezium to loading them into DuckDB with DLT.
 Let's break down the key parts:
 
 ==== 1. Setting up the Environment
