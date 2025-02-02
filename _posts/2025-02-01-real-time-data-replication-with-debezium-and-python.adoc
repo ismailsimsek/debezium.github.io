@@ -109,7 +109,7 @@ class DbPostgresql:
 
 #### 2. Configuring Debezium
 
-We configure Debezium by creating a Java `Properties` object. This object holds the https://debezium.io/documentation/reference/3.0/connectors/postgresql.html[configuration settings] for the Debezium engine.
+We configure Debezium by creating a Java `Properties` object. This object holds the https://debezium.io/documentation/reference/stable/connectors/postgresql.html[configuration settings] for the Debezium engine.
 It includes database connection details, the connector class (PostgresConnector), offset storage, and transformations.
 The `transforms` property is used to unwrap the Debezium message, simplifying downstream processing.
 
