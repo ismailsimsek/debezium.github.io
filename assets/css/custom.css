@@ -10252,7 +10252,6 @@ ul.icons-ul > li .icon-li {
 .content .nowrap {
   word-wrap: normal;
   white-space: pre !important;
-  overflow: scroll;
 }
 .content .nowrap code {
   white-space: inherit !important;
