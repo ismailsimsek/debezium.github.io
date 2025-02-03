@@ -10251,7 +10251,11 @@ ul.icons-ul > li .icon-li {
 /* ----------- Code formatting ------------ */
 .content .nowrap {
   word-wrap: normal;
+  white-space: pre !important;
   overflow: scroll;
+}
+.content .nowrap code {
+  white-space: inherit !important;
 }
 /* ----------- AsciiDoctor Admonition blocks ------------- */
 /* AsciiDoctor admonition blocks use different icon names, */
