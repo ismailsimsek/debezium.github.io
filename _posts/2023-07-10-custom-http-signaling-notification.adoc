@@ -259,7 +259,7 @@ public class HttpNotificationChannel implements NotificationChannel {
 <4> The `close()` method closes all allocated resources.
 
 
-Declare the `HTTP` signal and notification channels in the `META-INF/services` directory under `io.debezium.pipeline.signal.SignalChannelReader` and
+Declare the `HTTP` signal and notification channels in the `META-INF/services` directory under `io.debezium.pipeline.signal.channels.SignalChannelReader` and
 `io.debezium.pipeline.notification.channels.NotificationChannel` files respectively.
 
 Compile and export the Java project as a JAR file. This can be done using Maven or your preferred build tool. Copy the JAR file to the directory that contains the JAR file for the Debezium connector you want to use. For example, if you want to use the custom signal and notification channels with the Debezium Postgres connector, copy the JAR file to the `/kafka/connect/debezium-connector-postgres` directory.

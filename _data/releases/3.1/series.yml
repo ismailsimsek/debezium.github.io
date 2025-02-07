@@ -1,6 +1,6 @@
-summary: Version 3.0 release stream
-version: "3.0"
-overview: Incubating implementation of MongoDB sink connector; Switch to Java 17/21
+summary: Version 3.1 release stream
+version: "3.1"
+overview: JDBC sink supports vector datatypes; MariaDB supports SSL connections; SQL Server connector can limit amount of changes loaded to memory per trasnaction; Source inflo block schema is versioned; Incubating support for WebAssembly Scripting SMTs
 displayed: true
 hidden: false
 tutorial: true
@@ -40,7 +40,7 @@ compatibility:
         - 11.4.x
     driver:
       versions:
-        - 3.2.0
+        - 3.5.0
   mongodb:
     database:
       versions:

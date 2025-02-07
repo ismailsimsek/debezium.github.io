@@ -51,6 +51,8 @@ Thanks!
 
 == Blog Posts & Articles
 
+* https://medium.com/payu-engineering/unlocking-the-power-of-debezium-69ce9170f101[Unlocking the Power of Debezium] by Tomer Guttman
+* https://medium.com/@ismail-simsek/building-a-data-lake-with-debezium-and-apache-iceberg-part-1-25124daf2a95[Building a Data Lake with Debezium and Apache Iceberg] (https://medium.com/@ismail-simsek/building-a-data-lake-with-debezium-and-apache-iceberg-part-2-bd13ddb19bbf[Part 2], https://medium.com/@ismail-simsek/building-a-data-lake-with-debezium-and-apache-iceberg-part-3-86042974be15[Part 3]) by Ismail Simsek
 * https://medium.com/@maxime.thebault/debezium-mysql-boolean-and-real-type-handling-34573e56484d[Debezium + MySQL — “boolean” and “real” type handling] by Maxime Thebault
 * https://sofienebk.medium.com/change-data-capture-made-easy-debezium-integration-with-spring-boot-mongodb-and-postgres-96dc9772bb86["Change Data Capture Made Easy: Debezium Integration with Spring Boot, MongoDB and Postgres"] by Sofiene Ben Khemis
 * https://blog.picnic.nl/using-change-data-capture-for-warehouse-analytics-a1b23c074781["Using Change Data Capture for Warehouse Analytics"] by David Mischke
